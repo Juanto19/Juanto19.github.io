@@ -1,114 +1,109 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Torralbo - Data Analyst & Scientist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        h1, h2 {
-            color: #4CAF50;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        .social-icons a {
-            color: white;
-            margin: 0 0.5rem;
-            text-decoration: none;
-        }
-        .skills-list, .projects-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-list li, .projects-list li {
-            background-color: #e0e0e0;
-            margin: 0.5rem 0;
-            padding: 0.5rem;
-            border-radius: 5px;
-        }
-        .projects-list a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
     <header>
+        <img src="static/img/profile.jpg" alt="Juan Torralbo" class="profile-img">
         <h1>Juan Torralbo</h1>
-        <p>Data Analyst & Scientist</p>
-        <nav>
-            <a href="#about">Sobre Mí</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
-        </nav>
+        <h2>Data Analyst & Scientist</h2>
+        <a href="static/files/JUAN-TORRALBO-resume.pdf" class="download-resume">Download Resume</a>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section id="about">
-            <h2>Sobre Mí</h2>
-            <p>Soy un Analista y Científico de Datos con formación en bioinformática y biotecnología. Me especializo en desarrollar pipelines automatizados y aplicar técnicas avanzadas de análisis de datos para obtener insights significativos. Apasionado por transformar datos en información accionable, tengo experiencia en programación, visualización de datos y análisis estadístico.</p>
+            <h3>About Me</h3>
+            <p>I am a Data Analyst and Scientist with a background in bioinformatics and biotechnology. I specialize in Python, SQL, and Power BI, developing automated pipelines and applying advanced analytical techniques to deliver actionable insights. Passionate about Formula 1 and innovative data solutions, I blend technical expertise with a collaborative mindset.</p>
         </section>
+
         <section id="skills">
-            <h2>Habilidades</h2>
-            <ul class="skills-list">
-                <li><strong>Lenguajes de Programación:</strong> Python, R, SQL</li>
-                <li><strong>Herramientas:</strong> Power BI, Microsoft Office Suite</li>
-                <li><strong>Habilidades Blandas:</strong> Pensamiento crítico, comunicación efectiva, gestión de proyectos</li>
-            </ul>
+            <h3>Skills</h3>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h4>Languages</h4>
+                    <div class="skill-buttons">
+                        <button class="skill-button">Python</button>
+                        <button class="skill-button">SQL</button>
+                        <button class="skill-button">R</button>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4>Frameworks & Libraries</h4>
+                    <div class="skill-buttons">
+                        <button class="skill-button">Pandas</button>
+                        <button class="skill-button">Numpy</button>
+                        <button class="skill-button">Scikit-Learn</button>
+                        <button class="skill-button">Matplotlib</button>
+                        <button class="skill-button">Seaborn</button>
+                        <button class="skill-button">Plotly</button>
+                        <button class="skill-button">Streamlit</button>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4>Tools</h4>
+                    <div class="skill-buttons">
+                        <button class="skill-button">Power BI</button>
+                        <button class="skill-button">Git</button>
+                        <button class="skill-button">Google Analytics</button>
+                        <button class="skill-button">Docker</button>
+                        <button class="skill-button">Azure</button>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4>Specialities</h4>
+                    <div class="skill-buttons">
+                        <button class="skill-button">Data Visualization</button>
+                        <button class="skill-button">Machine Learning</button>
+                        <button class="skill-button">Big Data Processing</button>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section id="projects">
-            <h2>Proyectos Destacados</h2>
-            <ul class="projects-list">
-                <li><a href="https://github.com/Juanto19/Formula-1_Data_Analysis">Análisis de Datos de Fórmula 1</a></li>
-                <li><a href="https://github.com/Juanto19/Airbnb_Data_Analysis_Amsterdam">Análisis de Datos de Airbnb - Ámsterdam</a></li>
-                <li><a href="https://github.com/Juanto19/TFM_bioinf/tree/main">Pipeline Automatizado de µFTIR</a></li>
-            </ul>
+            <h3>Projects</h3>
+            <div class="projects-grid" id="projects-container">
+                <div><a href="https://github.com/Juanto19/Formula-1_Data_Analysis">Formula 1 Data Analysis</a></div>
+                <div><a href="https://github.com/Juanto19/Airbnb_Data_Analysis_Amsterdam">Airbnb Data Analysis - Amsterdam</a></div>
+                <div><a href="https://github.com/Juanto19/TFM_bioinf/tree/main">Automated µFTIR Pipeline</a></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <div class="contact-icons">
+                <a href="mailto:jtorralbotorrado@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Juanto19" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/juan-torralbo-torrado/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </section>
     </main>
+
     <footer>
-        <div class="social-icons">
-            <a href="mailto:jtorralbotorrado@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/juan-torralbo-torrado/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Juanto19"><i class="fab fa-github"></i></a>
-        </div>
-        <p>&copy; 2025 Juan Torralbo. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Juan Torralbo. All rights reserved.</p>
     </footer>
+
+    <script src="static/js/script.js"></script>
 </body>
 </html>
