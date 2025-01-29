@@ -1,0 +1,22 @@
+{
+    "projects": [
+      {
+        "title": "Formula 1 Data Analysis",
+        "description": "Analysis of Formula 1 racing data, including race results, driver performance, and team statistics. Built interactive visualizations to explore racing patterns and team strategies.",
+        "technologies": ["Python", "Pandas", "Matplotlib", "Seaborn"],
+        "link": "https://github.com/Juanto19/Formula-1_Data_Analysis"
+      },
+      {
+        "title": "Airbnb Data Analysis - Amsterdam",
+        "description": "Comprehensive analysis of Airbnb listings in Amsterdam, exploring pricing trends, location impacts, and seasonal variations. Developed predictive models for price optimization.",
+        "technologies": ["Python", "Data Visualization", "Statistical Analysis", "Machine Learning"],
+        "link": "https://github.com/Juanto19/Airbnb_Data_Analysis_Amsterdam"
+      },
+      {
+        "title": "Automated µFTIR Pipeline",
+        "description": "Development of an automated pipeline for processing and analyzing µFTIR spectroscopy data. Implemented advanced algorithms for spectral analysis and data processing.",
+        "technologies": ["Python", "Scientific Computing", "Automation", "Signal Processing"],
+        "link": "https://github.com/Juanto19/TFM_bioinf/tree/main"
+      }
+    ]
+  }
