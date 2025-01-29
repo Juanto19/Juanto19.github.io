@@ -26,7 +26,7 @@ function handleScroll() {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+        if (window.pageYOffset >= sectionTop - sectionHeight *0.8) {
             current = section.getAttribute('id');
             section.classList.add('animate');
         }
