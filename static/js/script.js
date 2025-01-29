@@ -8,7 +8,7 @@ async function loadProjects() {
         loadingElement.style.display = 'block';
         projectsContainer.style.display = 'none';
         
-        const response = await fetch('static/data/projects.json');
+        const response = await fetch('https://raw.githubusercontent.com/Juanto19/Juanto19.github.io/main/static/data/projects.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -65,7 +65,10 @@ function escapeHTML(str) {
 }
 
 // Load projects when the page loads
-window.addEventListener('load', loadProjects);
+document.addEventListener("DOMContentLoaded", function() {
+    loadProjects();
+});
+
 
 // Add refresh functionality (optional)
 function addRefreshButton() {
