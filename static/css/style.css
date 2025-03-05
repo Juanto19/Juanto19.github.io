@@ -349,3 +349,54 @@ nav ul li a.active {
         align-items: center;
     }
 }
+
+/* Add these styles to the existing style.css file */
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    text-align: center;
+    background-color: rgba(230, 242, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    min-width: 250px;
+}
+
+.contact-method h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #0052cc;
+}
+
+.contact-method p {
+    font-size: 1rem;
+}
+
+.contact-method a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+    color: #0052cc;
+}
+
+/* Responsive adjustments for contact details */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-method {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
